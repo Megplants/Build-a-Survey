@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gardening Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="build a survey.css">
+  </head>
+  <body>
+<h1 id="title">Gardening Survey</h1>
+<p id="description">How do you garden? I'd love to know! Please fill out this short survey to share what gardening methods work for you.</p>
+<form id="survey-form">
+  <!--Basic info input section-->
+  <label id="name-label" for="name">Name:
+  <input required id="name" type="text" name="name" placeholder="Type your name"></label><br>
+  <label id="email-label" for="email">Email:
+    <input required id="email" type="email" name="email" placeholder="Type your email address"> </label><br>
+  <label id="number-label" for="number">Age
+    <input required id="number" type="number" name="age" min="13" max="120" placeholder="--""></label><br>
+<br>
+<!--How you garden section-->
+ <fieldset><legend>How do you garden?</legend>
+ <label for="in-ground"><input id="in-ground" name="how" value="in-ground" type="radio">In-ground</label>
+  <label for="container"><input id="container" name="how" value="container" type="radio">Container</label></fieldset><br>
+<!--Gardeing experience section-->
+  <label for="dropdown">How much gardening experience do you have?
+          <select id="dropdown" name="experience">
+            <option value="">(select one)</option>
+            <option value="1">Novice</option>
+            <option value="2">Advanced Beginner</option>
+            <option value="3">Competent</option>
+            <option value="4">Proficient</option>
+            <option value="5">Expert</option>
+          </select>
+        </label><br>
+        <br>
+<!--What you grow section-->
+  <fieldset><legend>What do you grow?</legend>
+  <label class="grow" for="vegetables">
+    <input id="vegetables" type="checkbox" name="vegetables" value="vegetables">Vegetables</label>
+  <label class="grow" for="flowers">
+    <input id="flowers" type="checkbox" name="flowers" value="flowers">Flowers</label>
+<label class="grow" for="herbs">
+  <input id="herbs" type="checkbox" name="herbs" value="herbs"/>Herbs</label>
+<label class="grow" for="fruits">
+  <input id="fruits" type="checkbox" name="fruits" value="fruits" />Fruits</label>
+<label class="grow" for="ornamentals">
+  <input id="ornamentals" type="checkbox" name="ornamentals" value="ornamentals" >Ornamentals</label>
+<label class="grow" for="natives">
+  <input id="natives" type="checkbox" name="natives" value="natives" >Natives</label></fieldset><br>
+<!--Organic Gardening section-->
+<fieldset><legend>Is your garden Organic?</legend>
+ <label class="organic" for="organic"><input id="yes-plus" type="radio"value="yes-plus" name="organic">Yes, plus I use biodynamic gardening practices.</label>
+  <label class="organic" for="organic"><input id="yes-strict" type="radio" name="organic" value="yes-strict"/>Yes, I adhere strictly to organic gardening practices.</label>
+  <label class="organic" for="organic"><input id="yes-mostly" type="radio" name="organic" value="yes-mostly"/>Yes, I try to remain as organic as possible, but I don't adhere strictly.</label>
+  <label class="organic" for="organic"><input id="No" name="organic" type="radio" value="no"/>No</label>
+  </fieldset><br>
+  <!--Gardening methods section-->
+  <fieldset><legend>What gardening methods do you use?</legend>
+  <label class="methods" for="methods">
+    <input type="checkbox" value="trad" id="trad" name="methods">Traditional tilled rows</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="raised-beds" id="raised-beds" name="methods">Raised beds</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="no-dig" id="no-dig" name="methods">No-dig</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="perma" id="perma" name="methods">Permaculture</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="sfg" id="sfg" name="methods">Square Foot Gardening</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="containers" id="containers" name="methods">Containers</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="lasagna" id="lasagna" name="methods">Lasagna method</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="hugel" id="hugel" name="methods">Hugelkultur</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="hydro" id="hydro" name="methods">Hydroponic</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="vertical" id="vertical" name="methods">Vertical</label><br>
+    <label class="methods" for="methods">
+    <input type="checkbox" value="other" id="other" name="methods">Other<textarea name="other" rows="5" cols="30" placeholder="Other methods not listed"></textarea>
+  </label><br>
+  <br>
+  <!--Gardening related hobbies section-->
+<fieldset><legend>Do you have any gardening related hobbies?</legend>
+  <label class=“hobbies” for=“composting">
+    <input id=“composting" type="checkbox" name=“hobbies” value=“composting">Composting</label>
+  <label class="hobbies" for=“beekeeping”>
+    <input id=“beekeeping” type="checkbox" name="hobbies" value=“beekeeping”>Beekeeping</label>
+<label class="hobbies" for=“flower-arr”>
+  <input id="flower-arr" type="checkbox" name="hobbies" value="flower-arr"/>Flower arranging</label>
+<label class="hobbies" for=“bird-watch”>
+  <input id="bird-watch" type="checkbox" name="hobbies" value="bird-watch" />Bird watching</label>
+<label class="hobbies" for=“foraging”>
+  <input id="foraging" type="checkbox" name="hobbies" value="foraging" >Foraging</label>
+<label class="hobbies" for=“food-pres”>
+  <input id="food-pres" type="checkbox" name="hobbies" value="food-pres" >Food preservation</label>
+<label class=“hobbies” for=“chickens”>
+    <input id=“chickens" type="checkbox" name=“hobbies” value=“chickens">Raising chickens</label>
+  <label class="hobbies" for=“seeds”>
+    <input id=“seeds” type="checkbox" name="hobbies" value=“seeds”>Seed saving</label>
+<label class="hobbies" for=“photo”>
+  <input id="photo" type="checkbox" name="hobbies" value="photo"/>Photography</label>
+<label class="hobbies" for=“insect”>
+  <input id="insect" type="checkbox" name="hobbies" value="insect" />Insect identification</label>
+<label class="hobbies" for=“collecting”>
+  <input id="collecting" type="checkbox" name="hobbies" value="collecting" >Collecting plants</label>
+<label class="hobbies" for=“plantid”>
+  <input id="plantid" type="checkbox" name="hobbies" value="plantid" >Plant identification</label>
+<label class="hobbies" for=“woodworking”>
+  <input id="woodworking" type="checkbox" name="hobbies" value="woodworking" >Woodworking</label>
+<label class="hobbies" for=“otherhobby”>
+  <input id="otherhobby" type="checkbox" name="hobbies" value="otherhobby" >Other<textarea name=“hobbies” rows="5" cols="30" placeholder="Other hobbies not listed"></textarea></label>
+</fieldset>
+<input type="submit" id="submit" value="Submit" />
+</form>
+  </body>
